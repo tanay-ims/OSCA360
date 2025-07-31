@@ -1,0 +1,14 @@
+#sc_app/templates/admin/base_site.html
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block branding %}
+  <h1 id="site-name">
+    <img src="{% static 'images/mswd_logo.png' %}" style="height: 30px; vertical-align: middle;">
+    <span>Office of the Senior Citizens Affairs</span>
+  </h1>
+{% endblock %}
+
+{% block nav-global %}
+ 
+{% endblock %}
