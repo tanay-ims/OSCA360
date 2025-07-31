@@ -1,6 +1,8 @@
 from django.contrib import admin
 from .models import AccountableForm, Barangay, BenefitDisbursement, BenefitType, CityMunicipality, DeathDetail, Designation, Disability, Education, Eligibility, EmergencyContact, Ethnicity, Inventory, Issuance, MilestoneBenefit, MissedPayout, Office, Personnel, Province, Region, Relationship, Religion, SeniorCitizen, Signatory, TransferDetail
 
+
+
 # Register your models here.
 admin.site.register(AccountableForm)
 admin.site.register(Barangay)
