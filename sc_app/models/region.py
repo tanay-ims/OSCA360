@@ -3,6 +3,7 @@ from django.utils import timezone
 from django.core.validators import RegexValidator
 
 class Region(models.Model):
+    STATUS_CHOICES =[('A', 'Active'),('I','Inactive'),]
     psgc_code = models.CharField(
         max_length=9,
         unique=True,
@@ -10,6 +11,7 @@ class Region(models.Model):
         help_text="9-digit PSGC code (e.g., 010000000 for Region I)"
     )
     name = models.CharField(max_length=100, help_text="Region name (e.g., Region I - Ilocos Region)")
+    status = models.Charfield(max_length=1, choices=STATUS_CHOICES, default='A')
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
